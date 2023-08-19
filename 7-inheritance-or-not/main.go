@@ -1,4 +1,4 @@
-package inheritanceornot
+package main
 
 import "fmt"
 
