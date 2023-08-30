@@ -49,4 +49,21 @@ func main() {
 	slice_arr2[0] = "Cardeal"
 	fmt.Println("arr2", arr2)
 	fmt.Println("slice_arr2", slice_arr2)
+
+	// internal arrays
+	fmt.Println("---------------------------")
+	internalArray := make([]float32, 10, 15)
+	fmt.Println(len(internalArray))
+	fmt.Println(cap(internalArray))
+
+	floatSlice := make([]float32, 3)
+	floatSlice[0] = 123.4
+	fmt.Println("floatSlice: ", floatSlice)
+	fmt.Println("len(floatSlice): ", len(floatSlice))
+	fmt.Println("cap(floatSlice): ", cap(floatSlice))
+	floatSlice = append(floatSlice, 1)
+	fmt.Println("floatSlice: ", floatSlice)
+	fmt.Println("len(floatSlice): ", len(floatSlice))
+	fmt.Println("cap(floatSlice): ", cap(floatSlice))
+
 }
